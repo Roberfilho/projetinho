@@ -9,6 +9,20 @@ $linha = $sql_query-> fetch_assoc();
 <html lang="en">
 
 <head>
+     <?php
+       
+        session_start();
+        
+        if((!isset($_SESSION['email'])== true) and (!isset($_SESSION['senha'])== true))
+        {
+        session_unset();
+        echo"<script>
+        alert('Esta página so pode ser acessada por usuario logado');
+        window.location.href='login.php';
+        </script>";
+        }
+        $logado= $_SESSION['email'];
+        ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,7 +74,7 @@ $linha = $sql_query-> fetch_assoc();
                                     <a class="nav-link" href="usuarios.php">Usuarios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Alemanha.html">Sair</a>
+                                    <a class="nav-link" href="sair.php">Sair</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     
@@ -98,6 +112,7 @@ $linha = $sql_query-> fetch_assoc();
            <td>NOME </td>
            <td>E-MAIL</td>
            <td>SENHA</td>
+           <td>ALTERAR</td>
        </tr>
            <?php
            do{

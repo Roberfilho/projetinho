@@ -35,20 +35,20 @@
                             <form action="crudlogin.php" method="POST" class="login100-form validate-form">
 				<div class="login100-form-title" style="background-image: url(images/golquadrado1.jpg);">
 					<span class="login100-form-title-1">
-						Logar
+						Login
 					</span>
 				</div>
 
 				<form class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="email">
 						<span class="label-input100">E-mail</span>
-						<input class="input100" type="text" name="email" placeholder=" email">
+						<input class="input100" type="text" name="email" placeholder=" E-mail">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "senha">
 						<span class="label-input100">senha</span>
-						<input class="input100" type="password" name="pass" placeholder="senha">
+						<input class="input100" type="password" name="senha" placeholder="*********">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -57,7 +57,7 @@
 							
 							
                                                             <a class="txt1" href="http://localhost/Projetocerto/cadastro.html">
-								Cadastre-se!
+								ou Cadastre-se!
                                                             </a>
 							<
 						</div>

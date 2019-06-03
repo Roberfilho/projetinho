@@ -10,14 +10,14 @@ $reaultado_usuario=mysqli_query($cone, $result_usuario);
 
 if(mysqli_affected_rows($cone)!=0){
     echo"<script>
-     alert('Usuario cadastrado com sucesso');
+     alert('Usuario cadastrado com sucesso!');
      window.location.href='login.php';
      </script>";
            
     
 }else{
    echo"<script>
-     alert('usuario nao cadastrado');
+     alert('Usuario nao cadastrado!');
      window.location.href='login.php';
      </script>";
            

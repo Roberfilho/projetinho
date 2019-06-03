@@ -6,6 +6,20 @@ and open the template in the editor.
 -->
 <html>
     <head>
+         <?php
+       
+        session_start();
+        
+        if((!isset($_SESSION['email'])== true) and (!isset($_SESSION['senha'])== true))
+        {
+        session_unset();
+        echo"<script>
+        alert('Esta página so pode ser acessada por usuario logado');
+        window.location.href='login.php';
+        </script>";
+        }
+        $logado= $_SESSION['email'];
+        ?>
         <meta charset="UTF-8">
         <title></title>
         
